@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+/* eslint no-eval: 0 */
 
 function App() {
   const [value, setValue] = useState('')
@@ -39,7 +40,7 @@ function App() {
 
   // Back btn or Delete btn
   const del = () => {
-    if (value == ''){
+    if (value === ''){
 
     }else{
       const newValue = value.slice(0, -1);
